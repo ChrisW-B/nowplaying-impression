@@ -1,0 +1,251 @@
+[[package]]
+name = "certifi"
+version = "2021.10.8"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "charset-normalizer"
+version = "2.0.9"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+category = "main"
+optional = false
+python-versions = ">=3.5.0"
+
+[package.extras]
+unicode_backport = ["unicodedata2"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "idna"
+version = "3.3"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "inky"
+version = "1.3.1"
+description = "Inky pHAT Driver"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = "*"
+smbus2 = "*"
+spidev = "*"
+
+[package.extras]
+example-depends = ["beautifulsoup4", "font-fredoka-one", "font-hanken-grotesk", "font-intuitive", "font-source-serif-pro", "geocoder", "requests"]
+rpi = ["rpi.gpio"]
+rpi-gpio-output = ["rpi.gpio"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "numpy"
+version = "1.21.1"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "pillow"
+version = "8.4.0"
+description = "Python Imaging Library (Fork)"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "requests"
+version = "2.26.0"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = {version = ">=2.0.0,<2.1.0", markers = "python_version >= \"3\""}
+idna = {version = ">=2.5,<4", markers = "python_version >= \"3\""}
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "smbus2"
+version = "0.4.1"
+description = "smbus2 is a drop-in replacement for smbus-cffi/smbus-python in pure Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+docs = ["sphinx (>=1.5.3)"]
+qa = ["flake8"]
+test = ["nose", "mock"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "spidev"
+version = "3.5"
+description = "Python bindings for Linux SPI access through spidev"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "spotipy"
+version = "2.19.0"
+description = "A light weight Python library for the Spotify Web API"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+requests = ">=2.25.0"
+six = ">=1.15.0"
+urllib3 = ">=1.26.0"
+
+[package.extras]
+doc = ["Sphinx (>=1.5.2)"]
+test = ["mock (==2.0.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "urllib3"
+version = "1.26.7"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
+
+[package.extras]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
+brotli = ["brotlipy (>=0.6.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.7"
+content-hash = "47718630cacb5156895e58119813c48083c49718d7df07a097fb29a3fc601aaf"
+
+[metadata.files]
+certifi = [
+    {file = "certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:eaf5fd6a051cba81570919009491fc35069c99da0dd8d57304930ee7a5699fb0"},
+]
+charset-normalizer = [
+    {file = "charset_normalizer-2.0.9-py3-none-any.whl", hash = "sha256:8dfc98c61f5681242245432fabc438236a25af1caf063fd7659e12a2e31725ef"},
+]
+idna = [
+    {file = "idna-3.3-py3-none-any.whl", hash = "sha256:a8c56282ad8491e5d10c5d44e9e4ce38e37a16bc03ebb54fdcaf9d05b8e0c309"},
+]
+inky = [
+    {file = "inky-1.3.1-py3-none-any.whl", hash = "sha256:4c1808ef850d7cbd97fc4b94caf79796cffdf00cce9f894c91edfb5ef814d728"},
+]
+numpy = [
+    {file = "numpy-1.21.1-cp37-cp37m-linux_armv6l.whl", hash = "sha256:2c6413051a74c317d36f4bac04f61e8d1a6708969cc910d876664c76e36817a7"},
+    {file = "numpy-1.21.1-cp37-cp37m-linux_armv7l.whl", hash = "sha256:2c6413051a74c317d36f4bac04f61e8d1a6708969cc910d876664c76e36817a7"},
+    {file = "numpy-1.21.1-cp39-cp39-linux_armv6l.whl", hash = "sha256:004945dbc9a51a8045e0629c4e8c567a529d726dcb0b1f7a6bc594db492af62a"},
+    {file = "numpy-1.21.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:004945dbc9a51a8045e0629c4e8c567a529d726dcb0b1f7a6bc594db492af62a"},
+]
+pillow = [
+    {file = "Pillow-8.4.0-cp37-cp37m-linux_armv6l.whl", hash = "sha256:8784b6a49d5de36b9ca22a7fe5d6e0bbc13b856416ef0666d9eadf2bb6e519e3"},
+    {file = "Pillow-8.4.0-cp37-cp37m-linux_armv7l.whl", hash = "sha256:8784b6a49d5de36b9ca22a7fe5d6e0bbc13b856416ef0666d9eadf2bb6e519e3"},
+    {file = "Pillow-8.4.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:768b64dd9ccb507236585924573d5e45eb29a0e88e4cba8aff7cd13f0b6a74eb"},
+    {file = "Pillow-8.4.0-cp39-cp39-linux_armv7l.whl", hash = "sha256:768b64dd9ccb507236585924573d5e45eb29a0e88e4cba8aff7cd13f0b6a74eb"},
+]
+requests = [
+    {file = "requests-2.26.0-py2.py3-none-any.whl", hash = "sha256:6c1246513ecd5ecd4528a0906f910e8f0f9c6b8ec72030dc9fd154dc1a6efd24"},
+]
+six = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+]
+smbus2 = [
+    {file = "smbus2-0.4.1-py2.py3-none-any.whl", hash = "sha256:8b1e70cda011b6fb3caf8377a1084f73a5aa99392b78529f140b0a3f06468f6c"},
+]
+spidev = [
+    {file = "spidev-3.5-cp34-cp34m-linux_armv6l.whl", hash = "sha256:73a92248f6873d23e213961db087a3023ee939836ae4a247f7bbf07526f7a904"},
+    {file = "spidev-3.5-cp34-cp34m-linux_armv7l.whl", hash = "sha256:73a92248f6873d23e213961db087a3023ee939836ae4a247f7bbf07526f7a904"},
+    {file = "spidev-3.5-cp35-cp35m-linux_armv6l.whl", hash = "sha256:c810a1e2262bd949ffc9a4dbd831a54783d364705ecd6d3cc8b5b0b911db59e6"},
+    {file = "spidev-3.5-cp35-cp35m-linux_armv7l.whl", hash = "sha256:c810a1e2262bd949ffc9a4dbd831a54783d364705ecd6d3cc8b5b0b911db59e6"},
+    {file = "spidev-3.5-cp37-cp37m-linux_armv6l.whl", hash = "sha256:20261448f6427beb63df6a13914acf7aeeabb25b2c01d4d90d2f1f14c8e70268"},
+    {file = "spidev-3.5-cp37-cp37m-linux_armv7l.whl", hash = "sha256:20261448f6427beb63df6a13914acf7aeeabb25b2c01d4d90d2f1f14c8e70268"},
+]
+spotipy = [
+    {file = "spotipy-2.19.0-py3-none-any.whl", hash = "sha256:ff8087aacc95b90c887c45355864e6d42e723defff863b65898ea8d4bbc6d23b"},
+]
+urllib3 = [
+    {file = "urllib3-1.26.7-py2.py3-none-any.whl", hash = "sha256:0a8e10d23a880e7104007ec5f0d85d7d35ccad11aac7b70eaa879056868e16da"},
+]
