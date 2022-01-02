@@ -1,4 +1,4 @@
-from requests import post, get
+import requests
 from PIL import Image
 from inky.inky_uc8159 import Inky
 import hitherdither
@@ -11,26 +11,21 @@ url = "http://api.chriswb.dev/"
 palette = hitherdither.palette.Palette(
     inky._palette_blend(saturation, dtype='uint24'))
 
-query = """{lastfm{nowplaying{title artist image nowplaying}}}
-"""
-
+payload = "{\"query\":\"{\\n  lastfm {\\n    nowplaying {\\n      title\\n      artist\\n      image\\n      nowplaying\\n      id\\n    }\\n  }\\n}\\n\"}"
 headers = {"Content-Type": "application/json"}
 
-response = post(url, json={'query': query}, headers=headers)
+response = requests.request("POST", url, data=payload, headers=headers)
 
-if response.status_code == 200:
+if response.status_code == requests.codes.ok:
     json = response.json()
     track = json['data']['lastfm']['nowplaying']
     if track['nowplaying'] == True:
-        bg = Image.new("P", (inky.WIDTH, inky.HEIGHT))
-        img = Image.open(get(track['image'], stream=True).raw)
-        # image_dithered = hitherdither.ordered.bayer.bayer_dithering(image, palette, thresholds, order=8)
-        image_dithered = hitherdither.ordered.cluster.cluster_dot_dithering(
-            img, palette, thresholds, order=8)
-        CENTERED_IMG = inky.HEIGHT / 2
-        bg.paste(image_dithered, (0, int(CENTERED_IMG)))
+        bg = Image.new("RGBA", (inky.WIDTH, inky.HEIGHT), (255,255,255,255))
+        img = Image.open(requests.get(track['image'], stream=True).raw).convert("RGB")
+        # image_dithered = hitherdither.ordered.bayer.bayer_dithering(img, palette, thresholds, order=8)
+        image_dithered = hitherdither.ordered.cluster.cluster_dot_dithering(img, palette, thresholds, order=8)
+        bg.paste(image_dithered, (150, 94))
         inky.set_image(bg)
         inky.show()
 else:
-    raise Exception("Query failed to run by returning code of {}. {}".format(
-        response.status_code, query))
+        response.raise_for_status()
