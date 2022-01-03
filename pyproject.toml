@@ -6,7 +6,7 @@ authors = ["Chris Barry <2490974+ChrisW-B@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-pillow = "^8.2.0"
+pillow = "^9.0.0"
 inky = "^1.2.0"
 spotipy = "^2.19.0"
 

@@ -78,11 +78,11 @@ reference = "piwheels"
 
 [[package]]
 name = "pillow"
-version = "8.4.0"
+version = "9.0.0"
 description = "Python Imaging Library (Fork)"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.source]
 type = "legacy"
@@ -199,7 +199,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "47718630cacb5156895e58119813c48083c49718d7df07a097fb29a3fc601aaf"
+content-hash = "442e2510cfa27081dd360744c482ed36a8f499857dc118a509646ecd5070d5f8"
 
 [metadata.files]
 certifi = [
@@ -221,10 +221,10 @@ numpy = [
     {file = "numpy-1.21.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:004945dbc9a51a8045e0629c4e8c567a529d726dcb0b1f7a6bc594db492af62a"},
 ]
 pillow = [
-    {file = "Pillow-8.4.0-cp37-cp37m-linux_armv6l.whl", hash = "sha256:8784b6a49d5de36b9ca22a7fe5d6e0bbc13b856416ef0666d9eadf2bb6e519e3"},
-    {file = "Pillow-8.4.0-cp37-cp37m-linux_armv7l.whl", hash = "sha256:8784b6a49d5de36b9ca22a7fe5d6e0bbc13b856416ef0666d9eadf2bb6e519e3"},
-    {file = "Pillow-8.4.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:768b64dd9ccb507236585924573d5e45eb29a0e88e4cba8aff7cd13f0b6a74eb"},
-    {file = "Pillow-8.4.0-cp39-cp39-linux_armv7l.whl", hash = "sha256:768b64dd9ccb507236585924573d5e45eb29a0e88e4cba8aff7cd13f0b6a74eb"},
+    {file = "Pillow-9.0.0-cp37-cp37m-linux_armv6l.whl", hash = "sha256:99b119f90777d0bd11abc7a69fde73d6552d9919a59cc26ecfec2cbf20d72e6a"},
+    {file = "Pillow-9.0.0-cp37-cp37m-linux_armv7l.whl", hash = "sha256:99b119f90777d0bd11abc7a69fde73d6552d9919a59cc26ecfec2cbf20d72e6a"},
+    {file = "Pillow-9.0.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:782c5e9ea42a918d0ecc7909ab0a98ca99e70517a765b052768e10c0acf5b451"},
+    {file = "Pillow-9.0.0-cp39-cp39-linux_armv7l.whl", hash = "sha256:782c5e9ea42a918d0ecc7909ab0a98ca99e70517a765b052768e10c0acf5b451"},
 ]
 requests = [
     {file = "requests-2.26.0-py2.py3-none-any.whl", hash = "sha256:6c1246513ecd5ecd4528a0906f910e8f0f9c6b8ec72030dc9fd154dc1a6efd24"},
@@ -242,6 +242,8 @@ spidev = [
     {file = "spidev-3.5-cp35-cp35m-linux_armv7l.whl", hash = "sha256:c810a1e2262bd949ffc9a4dbd831a54783d364705ecd6d3cc8b5b0b911db59e6"},
     {file = "spidev-3.5-cp37-cp37m-linux_armv6l.whl", hash = "sha256:20261448f6427beb63df6a13914acf7aeeabb25b2c01d4d90d2f1f14c8e70268"},
     {file = "spidev-3.5-cp37-cp37m-linux_armv7l.whl", hash = "sha256:20261448f6427beb63df6a13914acf7aeeabb25b2c01d4d90d2f1f14c8e70268"},
+    {file = "spidev-3.5-cp39-cp39-linux_armv6l.whl", hash = "sha256:fac5de521322fa884a58e517cdba46e964accedcb4d2f2df8d09d21303471737"},
+    {file = "spidev-3.5-cp39-cp39-linux_armv7l.whl", hash = "sha256:fac5de521322fa884a58e517cdba46e964accedcb4d2f2df8d09d21303471737"},
 ]
 spotipy = [
     {file = "spotipy-2.19.0-py3-none-any.whl", hash = "sha256:ff8087aacc95b90c887c45355864e6d42e723defff863b65898ea8d4bbc6d23b"},
