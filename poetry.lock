@@ -1,0 +1,565 @@
+[[package]]
+name = "beautifulsoup4"
+version = "4.11.1"
+description = "Screen-scraping library"
+category = "main"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.dependencies]
+soupsieve = ">1.2"
+
+[package.extras]
+html5lib = ["html5lib"]
+lxml = ["lxml"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "certifi"
+version = "2022.9.24"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "charset-normalizer"
+version = "2.1.1"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+category = "main"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.extras]
+unicode_backport = ["unicodedata2"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "click"
+version = "8.1.3"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+importlib-metadata = {version = "*", markers = "python_version < \"3.8\""}
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "colorama"
+version = "0.4.6"
+description = "Cross-platform colored terminal text."
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "decorator"
+version = "5.1.1"
+description = "Decorators for Humans"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "font-fredoka-one"
+version = "0.0.4"
+description = "Fredoka One sans-serif font"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "font-hanken-grotesk"
+version = "0.0.2"
+description = "Hanken Grotesk serif font"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "font-intuitive"
+version = "0.0.4"
+description = "Intuitive hand-drawn font"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "font-source-serif-pro"
+version = "0.0.1"
+description = "Source Serif Pro, serif font"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "future"
+version = "0.18.2"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "geocoder"
+version = "1.38.1"
+description = "Geocoder is a simple and consistent geocoding library."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+click = "*"
+future = "*"
+ratelim = "*"
+requests = "*"
+six = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "hitherdither"
+version = "0.1.7"
+description = "Dithering algorithms for arbitrary palettes in PIL"
+category = "main"
+optional = false
+python-versions = "*"
+develop = false
+
+[package.dependencies]
+numpy = ">=1.9.0"
+Pillow = ">=3.3.1"
+
+[package.source]
+type = "git"
+url = "https://www.github.com/hbldh/hitherdither"
+reference = "master"
+resolved_reference = "b688094bb1e10bf5eda1ba999eb3c98a46ed9407"
+
+[[package]]
+name = "idna"
+version = "3.4"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "importlib-metadata"
+version = "5.1.0"
+description = "Read metadata from Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
+zipp = ">=0.5"
+
+[package.extras]
+docs = ["sphinx (>=3.5)", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "furo", "jaraco.tidelift (>=1.4)"]
+perf = ["ipython"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-cov", "pytest-enabler (>=1.3)", "packaging", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)", "pytest-flake8", "importlib-resources (>=1.3)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "inky"
+version = "1.4.0"
+description = "Inky pHAT Driver"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+beautifulsoup4 = {version = "*", optional = true, markers = "extra == \"example-depends\""}
+font-fredoka-one = {version = "*", optional = true, markers = "extra == \"example-depends\""}
+font-hanken-grotesk = {version = "*", optional = true, markers = "extra == \"example-depends\""}
+font-intuitive = {version = "*", optional = true, markers = "extra == \"example-depends\""}
+font-source-serif-pro = {version = "*", optional = true, markers = "extra == \"example-depends\""}
+geocoder = {version = "*", optional = true, markers = "extra == \"example-depends\""}
+numpy = "*"
+requests = {version = "*", optional = true, markers = "extra == \"example-depends\""}
+"RPi.GPIO" = {version = "*", optional = true, markers = "extra == \"rpi\""}
+smbus2 = "*"
+spidev = "*"
+
+[package.extras]
+example-depends = ["requests", "geocoder", "beautifulsoup4", "font-fredoka-one", "font-source-serif-pro", "font-hanken-grotesk", "font-intuitive"]
+rpi = ["rpi.gpio"]
+rpi-gpio-output = ["rpi.gpio"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "numpy"
+version = "1.21.1"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "pillow"
+version = "8.4.0"
+description = "Python Imaging Library (Fork)"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "ratelim"
+version = "0.1.6"
+description = "Makes it easy to respect rate limits."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+decorator = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "requests"
+version = "2.28.1"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=3.7, <4"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = ">=2,<3"
+idna = ">=2.5,<4"
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "rpi.gpio"
+version = "0.7.1"
+description = "A module to control Raspberry Pi GPIO channels"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "smbus2"
+version = "0.4.2"
+description = "smbus2 is a drop-in replacement for smbus-cffi/smbus-python in pure Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+docs = ["sphinx (>=1.5.3)"]
+qa = ["flake8"]
+test = ["nose", "mock"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "soupsieve"
+version = "2.3.2.post1"
+description = "A modern CSS selector implementation for Beautiful Soup."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "spidev"
+version = "3.6"
+description = "Python bindings for Linux SPI access through spidev"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "spotipy"
+version = "2.19.0"
+description = "A light weight Python library for the Spotify Web API"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+requests = ">=2.25.0"
+six = ">=1.15.0"
+urllib3 = ">=1.26.0"
+
+[package.extras]
+doc = ["Sphinx (>=1.5.2)"]
+test = ["mock (==2.0.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "typing-extensions"
+version = "4.4.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "urllib3"
+version = "1.26.13"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+
+[package.extras]
+brotli = ["brotlicffi (>=0.8.0)", "brotli (>=1.0.9)", "brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "urllib3-secure-extra", "ipaddress"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "zipp"
+version = "3.11.0"
+description = "Backport of pathlib-compatible object wrapper for zip files"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["sphinx (>=3.5)", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "furo", "jaraco.tidelift (>=1.4)"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-cov", "pytest-enabler (>=1.3)", "jaraco.itertools", "func-timeout", "jaraco.functools", "more-itertools", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)", "pytest-flake8"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.7"
+content-hash = "093c710f352c8207a46188dee87ef30f53eaa6f80809457dbbaa8ed6fa084ba5"
+
+[metadata.files]
+beautifulsoup4 = [
+    {file = "beautifulsoup4-4.11.1-py3-none-any.whl", hash = "sha256:8b2a18f3356ecb0073841e81dedb2370a6269b238ba2eb99d4d4f43022aad50b"},
+]
+certifi = [
+    {file = "certifi-2022.9.24-py3-none-any.whl", hash = "sha256:70fa284520b2a9be47502025d8a755e6bdb06327baaa9097fe59759c236ade4b"},
+]
+charset-normalizer = [
+    {file = "charset_normalizer-2.1.1-py3-none-any.whl", hash = "sha256:9ff357cacd4163b3a6aa343bc166533cd0cf173323b885b7ea2094a7fa1cec24"},
+]
+click = [
+    {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:0fbcde147794ed8e320fe5cfe2155cf6fcb76c1249ae7292a4c07d25de6825fe"},
+]
+colorama = [
+    {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
+]
+decorator = [
+    {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:6f519e77644a392d3054e528ba8db527df4246be581d4d43b14f0aacace79cbd"},
+]
+font-fredoka-one = [
+    {file = "font_fredoka_one-0.0.4-py3-none-any.whl", hash = "sha256:f177fdb46dcb7be565a68ece3a7b353a92cf038554a037f57b6303f6a5478ff8"},
+]
+font-hanken-grotesk = [
+    {file = "font_hanken_grotesk-0.0.2-py3-none-any.whl", hash = "sha256:7c3609e9bcdc2c9550b2a3baaed937eb7598fc1034e7df1ebcc4eb5489fa86f9"},
+]
+font-intuitive = [
+    {file = "font_intuitive-0.0.4-py3-none-any.whl", hash = "sha256:344184f23f7fa1d3b8cee328f92d268dcf5e18d15e46ef979165863cb897924a"},
+]
+font-source-serif-pro = [
+    {file = "font_source_serif_pro-0.0.1-py3-none-any.whl", hash = "sha256:38dd9a8d8027d22aa8ef2d10d27d7c558701b32772ff9f3790f509577e91dca4"},
+]
+future = [
+    {file = "future-0.18.2-py3-none-any.whl", hash = "sha256:83c4f8cec14cd08179d8b4bfe8c5e48724efadac8add187f385c68d6ae2345e6"},
+]
+geocoder = [
+    {file = "geocoder-1.38.1-py2.py3-none-any.whl", hash = "sha256:a733e1dfbce3f4e1a526cac03aadcedb8ed1239cf55bd7f3a23c60075121a834"},
+]
+hitherdither = []
+idna = [
+    {file = "idna-3.4-py3-none-any.whl", hash = "sha256:bcac1132a4eadea8321490704e2349b752e29c6ec2f1c27d372010e76ebd3fa1"},
+]
+importlib-metadata = [
+    {file = "importlib_metadata-5.1.0-py3-none-any.whl", hash = "sha256:f85e8eef4e8987e79f4d0b3376c8e6bc52a6614e71c185c3adaaf77cd234537c"},
+]
+inky = [
+    {file = "inky-1.4.0-py3-none-any.whl", hash = "sha256:0ebceb86ff6c270a27cdf6dc1b5d8902012a388f29f832673bceeb6980deb83d"},
+]
+numpy = [
+    {file = "numpy-1.21.1-cp37-cp37m-linux_armv6l.whl", hash = "sha256:2c6413051a74c317d36f4bac04f61e8d1a6708969cc910d876664c76e36817a7"},
+    {file = "numpy-1.21.1-cp37-cp37m-linux_armv7l.whl", hash = "sha256:2c6413051a74c317d36f4bac04f61e8d1a6708969cc910d876664c76e36817a7"},
+    {file = "numpy-1.21.1-cp39-cp39-linux_armv6l.whl", hash = "sha256:004945dbc9a51a8045e0629c4e8c567a529d726dcb0b1f7a6bc594db492af62a"},
+    {file = "numpy-1.21.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:004945dbc9a51a8045e0629c4e8c567a529d726dcb0b1f7a6bc594db492af62a"},
+]
+pillow = [
+    {file = "Pillow-8.4.0-cp37-cp37m-linux_armv6l.whl", hash = "sha256:8784b6a49d5de36b9ca22a7fe5d6e0bbc13b856416ef0666d9eadf2bb6e519e3"},
+    {file = "Pillow-8.4.0-cp37-cp37m-linux_armv7l.whl", hash = "sha256:8784b6a49d5de36b9ca22a7fe5d6e0bbc13b856416ef0666d9eadf2bb6e519e3"},
+    {file = "Pillow-8.4.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:768b64dd9ccb507236585924573d5e45eb29a0e88e4cba8aff7cd13f0b6a74eb"},
+    {file = "Pillow-8.4.0-cp39-cp39-linux_armv7l.whl", hash = "sha256:768b64dd9ccb507236585924573d5e45eb29a0e88e4cba8aff7cd13f0b6a74eb"},
+]
+ratelim = [
+    {file = "ratelim-0.1.6-py2.py3-none-any.whl", hash = "sha256:e1a7dd39e6b552b7cc7f52169cd66cdb826a1a30198e355d7016012987c9ad08"},
+]
+requests = [
+    {file = "requests-2.28.1-py3-none-any.whl", hash = "sha256:f598c2ccf6521aa5a214a537caf4aa57d359d0a9040a62f9e23f1d973512c0b8"},
+]
+"rpi.gpio" = [
+    {file = "RPi.GPIO-0.7.1-cp35-cp35m-linux_armv6l.whl", hash = "sha256:5073d1972727cfad38a1a42f02da91dc41f137679290aa804ab6c410168347ac"},
+    {file = "RPi.GPIO-0.7.1-cp35-cp35m-linux_armv7l.whl", hash = "sha256:5073d1972727cfad38a1a42f02da91dc41f137679290aa804ab6c410168347ac"},
+    {file = "RPi.GPIO-0.7.1-cp37-cp37m-linux_armv6l.whl", hash = "sha256:e5dfec2c4ccb7dbe9eef3dfc76a3b04121fc62d77fd8fbe1a8e841468a1b0c4c"},
+    {file = "RPi.GPIO-0.7.1-cp37-cp37m-linux_armv7l.whl", hash = "sha256:e5dfec2c4ccb7dbe9eef3dfc76a3b04121fc62d77fd8fbe1a8e841468a1b0c4c"},
+    {file = "RPi.GPIO-0.7.1-cp39-cp39-linux_armv6l.whl", hash = "sha256:231f6142c25975a7e39b96faf4905f05f97dba6809e8c5f0d58f284b35b4b821"},
+    {file = "RPi.GPIO-0.7.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:231f6142c25975a7e39b96faf4905f05f97dba6809e8c5f0d58f284b35b4b821"},
+]
+six = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+]
+smbus2 = [
+    {file = "smbus2-0.4.2-py2.py3-none-any.whl", hash = "sha256:007c2bcb7f4908b4a668fbcc2260b227ec3da28f122fb9d98c67b9081d9c5b3f"},
+]
+soupsieve = [
+    {file = "soupsieve-2.3.2.post1-py3-none-any.whl", hash = "sha256:3b2503d3c7084a42b1ebd08116e5f81aadfaea95863628c80a3b774a11b7c759"},
+]
+spidev = [
+    {file = "spidev-3.6-cp37-cp37m-linux_armv6l.whl", hash = "sha256:ef47ae501d5b307ce7411e3ddab4b4d04fa31fdaed5e5730a4e3336f65c5f76b"},
+    {file = "spidev-3.6-cp37-cp37m-linux_armv7l.whl", hash = "sha256:ef47ae501d5b307ce7411e3ddab4b4d04fa31fdaed5e5730a4e3336f65c5f76b"},
+    {file = "spidev-3.6-cp39-cp39-linux_armv6l.whl", hash = "sha256:202698d9f7906cca548c301b97eee117bc029642af3e743b28597f752d11c0ee"},
+    {file = "spidev-3.6-cp39-cp39-linux_armv7l.whl", hash = "sha256:202698d9f7906cca548c301b97eee117bc029642af3e743b28597f752d11c0ee"},
+]
+spotipy = [
+    {file = "spotipy-2.19.0-py3-none-any.whl", hash = "sha256:ff8087aacc95b90c887c45355864e6d42e723defff863b65898ea8d4bbc6d23b"},
+]
+typing-extensions = [
+    {file = "typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:979fb485ad436c08d30192f00835e928d3029f13146107787caec5a68c4a6725"},
+]
+urllib3 = [
+    {file = "urllib3-1.26.13-py2.py3-none-any.whl", hash = "sha256:c29a77500811e9bc2aaa8dae91526d98f24f0790bef70235a0bee6c2edf88580"},
+]
+zipp = []
